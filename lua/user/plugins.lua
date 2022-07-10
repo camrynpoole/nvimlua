@@ -68,7 +68,8 @@ return packer.startup(function(use)
 	use("vimwiki/vimwiki")
 
 	-- LF
-	use("lmburns/lf.nvim")
+	use("ptzz/lf.vim")
+    use ("voldikss/vim-floaterm")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
