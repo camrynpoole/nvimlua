@@ -10,4 +10,3 @@ project.setup({
 	-- patterns used to detect root dir, when **"pattern"** is in detection_methods
 	patterns = { ".git", "Makefile", "package.json" },
 })
-

@@ -35,20 +35,17 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
--- Clear highlights
-keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
-
 -- Insert --
 
--- disable arrow keys 
-keymap("i","<Up>","<nop>", opts)
-keymap("i","<Down>","<nop>", opts)
-keymap("i","<Left>","<nop>", opts)
-keymap("i","<Right>","<nop>", opts)
+-- disable arrow keys
+keymap("i", "<Up>", "<nop>", opts)
+keymap("i", "<Down>", "<nop>", opts)
+keymap("i", "<Left>", "<nop>", opts)
+keymap("i", "<Right>", "<nop>", opts)
 
-  -- Visual --
+-- Visual --
 
-  -- Stay in indent mode
+-- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
@@ -62,10 +59,10 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 
-  -- Plugins --
+-- Plugins --
 
--- LF 
-keymap("n", "<leader>l",":Lf<CR>", opts)
+-- LF
+keymap("n", "<leader>;", ":Lf<CR>", opts)
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
