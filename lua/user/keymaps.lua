@@ -35,6 +35,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
+-- easier save
+keymap("n", "<leader>w", ":w<CR>", opts)
+keymap("n", "<leader>wq", ":wq<CR>", opts)
+
 -- Insert --
 
 -- disable arrow keys
