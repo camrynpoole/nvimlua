@@ -36,6 +36,15 @@ vim.opt.scrolloff = 8 -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
 vim.opt.fillchars.eob = " "
+vim.opt.list          = true
+vim.opt.listchars     = {
+  tab = '-->',
+  space ='·',
+  eol ='↲',
+  trail ='✗',
+  extends='⟩',
+  precedes='⟨'
+}
 vim.opt.shortmess:append("c")
 vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.iskeyword:append("-")
