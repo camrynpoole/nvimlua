@@ -65,7 +65,10 @@ return packer.startup(function(use)
 	use("tpope/vim-surround")
 	use("kyazdani42/nvim-tree.lua")
 	use("justinmk/vim-sneak")
-	use("kshenoy/vim-signature")
+	use("abecodes/tabout.nvim")
+
+	-- which key
+	use("folke/which-key.nvim")
 
 	-- vimwiki
 	use("vimwiki/vimwiki")

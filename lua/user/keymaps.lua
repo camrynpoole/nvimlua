@@ -17,10 +17,10 @@ vim.g.mapleader = ","
 -- Normal --
 
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<leader>h", "<C-w>h", opts)
+keymap("n", "<leader>j", "<C-w>j", opts)
+keymap("n", "<leader>k", "<C-w>k", opts)
+keymap("n", "<leader>l", "<C-w>l", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -28,16 +28,21 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+-- I hate typing these
+keymap("n", "H", "^", opts)
+keymap("n", "L", "$", opts)
+keymap("v", "H", "^", opts)
+keymap("v", "L", "$", opts)
 
--- Close buffers
-keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
+-- Navigate buffers
+keymap("n", "<leader>n", ":bnext<CR>", opts)
+keymap("n", "<leader>p", ":bprevious<CR>", opts)
+keymap("n", "<leader>q", "<cmd>Bdelete!<CR>", opts)
 
 -- easier save
 keymap("n", "<leader>w", ":w<CR>", opts)
 keymap("n", "<leader>wq", ":wq<CR>", opts)
+keymap("n", "<leader>q", ":q!<CR>", opts)
 
 -- Insert --
 
