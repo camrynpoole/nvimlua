@@ -37,7 +37,7 @@ keymap("v", "L", "$", opts)
 -- Navigate buffers
 keymap("n", "<leader>n", ":bnext<CR>", opts)
 keymap("n", "<leader>p", ":bprevious<CR>", opts)
-keymap("n", "<leader>q", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<leader>c", "<cmd>Bdelete!<CR>", opts)
 
 -- easier save
 keymap("n", "<leader>w", ":w<CR>", opts)
